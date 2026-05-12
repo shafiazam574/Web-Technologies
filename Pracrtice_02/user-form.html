@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="user-form.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="registrationForm" novalidate>
+            <h2>Register</h2>
+
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" id="username" required>
+                <small class="error" id="usernameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+                <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                <small class="error" id="passwordError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" required>
+                <small class="error" id="confirmPasswordError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" required>
+                    <option value="">Select Role</option>
+                    <option>Admin</option>
+                    <option>User</option>
+                    <option>Guest</option>
+                </select>
+                <small class="error" id="roleError"></small>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="user-form.js"></script>
+</body>
+</html>
